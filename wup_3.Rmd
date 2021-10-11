@@ -47,6 +47,19 @@ The students in the front on average consume alcohol 1.8 times a week, the stude
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The p-value is low for the anova test which means we are not done yet. The p-value means that there are at least two rows where the alcohol consumption is significantly different between them.  
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+The three seats each have a different mean level. The front to back mean level is around from 12 to 4 drinks than the front is. The back is drinking around 10 to 3 drinks more than the middle. It doesn't appear to be any difference between the middle and the front because 0 is inside the confidence level of the difference.   
+
 ## Conclusions
 
 
