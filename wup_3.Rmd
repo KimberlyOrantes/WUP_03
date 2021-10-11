@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
 author: "Kimberly Orantes"
-date: "Fall 2021"
+date: "October 11, 2021"
 output: html_document
 ---
 
@@ -35,7 +35,15 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
-## Numerical Summarys 
+The fancy boxplot reinforces the previous bocplot that shows the median of the average use of alcohol is greater for students sitting in the back than the students sitting in the front seat. The fancy boxplot's niches shows how large the standard deviation is for students sitting in the back drink more than the other students.  
+
+## Numerical Summarys
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+The students in the front on average consume alcohol 1.8 times a week, the students in the middle consume on average 3.3 times a week, and the students in the back consume on average 8.5 times a week. The standard deviation for the front is 3.8, the middle is 6.2, and the back is 12.5. This reinforces the second boxplot with the students sitting farther back from the front consume more alcohol.  
 
 ## Inferential Tests
 
