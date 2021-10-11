@@ -62,4 +62,5 @@ The three seats each have a different mean level. The front to back mean level i
 
 ## Conclusions
 
+We were given a numerical by categorical problem and used a numerical by categorical helper file. We looked at each of the plots and concluded which row of students consumed more alcohol than other rows of students. We concluded that the back row of students which we checked this conclusion using the turkey HSD test.  
 
